@@ -1,0 +1,16 @@
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://vozhu.by/ [R=301,L]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.vozhu.by$ [NC]
+RewriteRule ^(.*)$ https://vozhu.by/$1 [R=301,L]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)$ https://vozhu.by/$1 [R=301,L]
+
+
+
+
+
+
+

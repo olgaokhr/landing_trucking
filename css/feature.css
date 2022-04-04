@@ -1,0 +1,38 @@
+.hidden{	display: none;
+}
+.visible{	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+}
+
+.jscarousal-horizontal{
+    text-align: center;
+    width: 100%;
+}
+.jscarousal-contents-horizontal{
+
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.jscarousal-contents-horizontal > div{
+	position: absolute;
+	width: 100%;}
+	
+.jscarousal-contents-horizontal > div > div{
+	margin-left: 8px;
+    margin-right: 8px;}
+    
+@media screen and (max-width: 768px){
+    .visible, .hidden{
+        grid-template-columns: 1fr 1fr;
+    }
+}   
+
+@media screen and (max-width: 320px){
+    .visible, .hidden{
+        grid-template-columns: 1fr;
+    }
+}   

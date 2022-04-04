@@ -1,0 +1,689 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    width: 100%;
+    background-color: #070b0e;
+    font-family: 'Open Sans';
+}
+.wrapper{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+
+p, span, li{
+    color: #777;
+    font-size: 16px;
+}
+
+h1{
+    color: #777;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+h2{
+    color: #003abe;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3{
+    color: #777;
+    font-size: 20px;
+}
+
+h4{
+    color: #003abe;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+hr{
+    color: #777;
+    margin: 10px 0;
+}
+
+
+a{
+    color: #777;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #003abe;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+i {
+    color: #003abe;
+}
+
+header{
+    position: fixed;
+    background: #070b0e;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+header .header-top, header .menu{
+    padding: 15px 0;
+    background: #000;
+}
+
+header .header-top .wrapper{   
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+header .header-content{
+    padding: 10px 0;
+}
+
+header .menu .wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    justify-content: start;
+    grid-column-gap: 20px;
+}
+
+
+header .contact span{
+    padding-left: 20px;
+}
+
+header .header-title p, header .header-name p, header .menu a{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.header-content .contact span, .header-content .contact span a {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.header-content .contact i {
+    font-size: 24px;
+}
+
+header .header-content .wrapper{   
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+header .contact{
+    display: grid;
+    grid-template-columns: auto auto;  
+    justify-content: end;
+    align-content: center;
+}
+
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+.content-video {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 50px;
+}
+
+/* #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+} */
+
+#myBtn:hover {
+    background: #777;
+    color: black;
+}
+p.tel a, div.contact-text h3 a{
+    color: #003abe;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+
+.btn{
+    font-weight: 500;
+    padding: 20px;
+    margin: 20px 0;
+    background: #003abe;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    backface-visibility: hidden;
+    position: relative;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+}
+.btn:hover{
+color: #fff;
+font-weight: 600;
+}
+
+.remodal i{
+    font-size: 40px;
+}
+
+
+section h2{
+    padding: 100px 0 50px 0;
+}
+
+
+.feature{
+    margin-top: -100px;
+}
+
+.feature .wrapper{
+    max-width: 980px;
+}
+.feature .feature-box{
+    background-color: #070b0e;
+    border: 1px #000 solid;
+    padding: 50px 5px;
+}
+
+.feature .feature-box i{
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+
+.feature .feature-box p{
+    font-size: 14px;
+}
+
+.uslugi .spisok-uslug{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+
+.uslugi .spisok-uslug .usluga{
+    border: 1px solid #000;
+    background: #070b0e;
+    text-transform: uppercase;
+    padding: 0 5px;
+
+}
+
+.uslugi .spisok-uslug .usluga h3{
+font-size: 18px;
+}
+
+section .work-spisok{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-column-gap: 10px;
+margin-bottom: 10px;
+}
+
+section .work-spisok i{
+    color: #000;
+    font-size: 60px;
+    padding: 30px 0;
+    border: 1px solid #777;
+    border-radius: 100%;
+    width: 2em;
+    margin: 20px 0;
+    background: #777;
+}
+
+section .work-spisok .work{
+    border: 1px solid #000;
+    background: #070b0e;
+    text-transform: uppercase;
+    padding: 30px 5px;
+}
+
+section.raschet, section.zayavka, section.call-me, section.contact{
+    background-image: url(../images/fon-volny.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+section.raschet .wrapper, section.zayavka .wrapper, section.about .wrapper, section.price .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    grid-column-gap: 15px;
+    margin-bottom: 30px;
+}
+
+
+section.raschet .wrapper div, section.zayavka .wrapper div{
+margin: 30px 0;
+}
+
+section.raschet .wrapper .rascet-forma, section.zayavka .wrapper .zayavka-forma, section.call-me .wrapper .call-me-forma, section.contact .wrapper .contact-form{
+background-color: rgba(0,0,0,0.58) !important;
+}
+
+section.raschet .wrapper .rascet-forma .btn, input.btn, section.raschet .wrapper .zayavka-forma .btn, input.btn {
+    width: 100%;
+}
+
+section.mercedes {
+    border-top: 15px dashed #f79624;
+    border-bottom: 15px dashed #f79624;
+
+}
+
+div.mercedes-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-column-gap: 15px;
+}
+
+section.mercedes img{
+    width: 100%;
+}
+
+div.mercedes-content .mercedes-text p{
+    color: #000;
+    font-size: 20px;
+    background: #777;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+div.mercedes-content .mercedes-text p:hover, section .work-spisok .work:hover, .uslugi .spisok-uslug .usluga:hover{
+    transform: scale(1.1); 
+}
+
+section.about .wrapper .about-text p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+
+section.about .wrapper .about-text h2, section.price .wrapper .price-text h2{
+    text-align: left;
+}
+
+section.price .wrapper .price-text .price-block{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 14px;
+    grid-column-gap: 5px;
+    grid-row-gap: 15px;
+}
+
+section.price .wrapper .price-text .price-block div{
+padding: 10px 0;
+text-align: justify;
+}
+
+section.price .wrapper .price-text p{    
+    color: #777;
+    text-align: left;
+    font-size: 14px;
+}
+
+section.call-me .wrapper form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+section.call-me .wrapper h2{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+
+section.call-me .wrapper p{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+section.call-me .wrapper form .btn {
+    padding: 13px 0;
+}
+
+
+div.rascet-img img:hover,  div.zayavka-img img:hover, div.about-img img:hover, div.price-img img:hover{
+    transform: scale(1.1); 
+}
+
+section.rospis .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+section.rospis .wrapper .rospis-img{
+    text-align: center;
+}
+
+section.rospis .wrapper .rospis-text{
+    text-align: justify;
+}
+
+section.contact .contact-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 15px;
+}
+
+section.contact .contact-block .contact-form{
+    text-align: center;
+}
+
+section.contact .contact-block .contact-form h3{
+    color: #003abe;
+}
+
+div.info{
+    background-color: #777;
+    padding: 15px;
+}
+
+section.contact .info {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-column-gap: 15px;
+}
+
+section.contact .info i{
+font-size: 30px;
+padding: 10px;
+}
+
+
+div.info p{
+    color: #000;
+}
+
+
+footer .footer-info .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-column-gap: 15px;
+    padding: 40px 0;
+}
+
+footer .footer-info .wrapper div p a{
+    color: #003abe;
+    font-size: 20px;
+}
+
+footer .footer-copirigth{
+    background-color: #000; 
+}
+
+footer .footer-copirigth .wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    grid-column-gap: 15px;
+    padding: 10px 0;
+}
+
+header .header-burger{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        max-width: 700px;
+    }
+    p{
+        font-size: 18px;
+    }
+
+    header .header-top .wrapper{
+        grid-template-columns: auto auto auto;
+    }
+    
+    header .header-top, header .menu{
+        padding: 0;
+    }
+
+    header .menu .wrapper{
+        display: none;
+    }
+
+    header .header-burger{
+        display: block;
+    }
+    
+    header .header-burger input{
+        display: none;
+    }
+
+    
+label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+}
+
+.burger-line{
+    position: absolute;
+    top: 8px;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s all;
+}
+
+.second, .third{
+    top: 18px;
+}
+
+.fourth{
+    top: 28px;
+}
+
+.main-menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+}
+
+.main-menu a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(255,255,255,.3);
+    background-color: #000;
+}
+
+.main-menu a:hover{
+    background-color: rgba(0,0,0,.9);
+}
+
+#check-menu:checked ~ .main-menu{
+    max-height: 500px;
+    font-size: 16px;
+}
+
+#check-menu:checked ~ .first{
+    display: none;
+}
+
+#check-menu:checked ~ .second{
+    transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth{
+    display: none;
+}
+
+header .header-content .wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+}
+
+header .contact {
+    grid-template-columns: auto;
+    align-content: center;
+    text-align: right;
+}
+
+.content-video {
+    padding-bottom: 350px;
+}
+
+.feature{
+    margin-top: -100px;
+}
+
+#myVideo{
+    min-height: 700px;
+    object-fit: cover;
+}
+
+.jscarousal-horizontal{
+    padding: 0;
+}
+
+.uslugi .spisok-uslug{
+    grid-template-columns: 1fr 1fr;
+}
+
+div .price-img{
+    display: none;
+}
+
+section.price .wrapper{
+    grid-template-columns: 1fr;
+}
+
+.putName, .putPhone, .marchrut{
+    padding: 0 5px;
+}
+
+section.call-me .wrapper form{
+    grid-column-gap: 20px;
+}
+
+
+
+
+}   
+
+@media screen and (max-width: 420px){
+
+    .wrapper{
+        max-width: 400px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    header .header-top .wrapper {
+        grid-template-columns: auto auto;
+    }
+    header .header-top .wrapper .header-name {
+        display: none;
+    }
+
+    header .header-content .wrapper{
+        grid-template-columns: auto;
+    }
+
+    header .header-burger{
+        margin-right: 30px;
+    }
+
+    .content-video{
+        margin-bottom: -400px;
+    }
+    .uslugi .spisok-uslug, div.mercedes-content, section .work-spisok, section.raschet .wrapper, section.zayavka .wrapper, section.about .wrapper, section.price .wrapper, section.raschet, section.zayavka, section.call-me, section.contact, section.call-me .wrapper form, section.rospis .wrapper,section.contact .contact-block, section.contact .info,footer .footer-info .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+
+    footer .footer-info .wrapper div{
+        padding: 10px 0;
+    }
+    
+}
